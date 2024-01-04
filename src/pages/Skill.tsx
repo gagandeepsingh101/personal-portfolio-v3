@@ -34,13 +34,13 @@ const Skill: React.FC = () => {
   return (
     <div className='w-full h-[86%] flex flex-col px-6 py-3' >
       <h2 className='text-2xl font-bold'>Frameworks and library</h2>
-      <div className='flex justify-evenly flex-wrap p-3 mx-auto w-5/6 h-fit '>
+      <div className='flex justify-evenly flex-wrap p-1 mx-auto w-5/6 h-fit '>
         {skillIconArrays.map(skill => (
           <CircularProgress percentage={skill.percentage} icon={skill.icon} iconName={skill.iconName} ></CircularProgress>
         ))}
       </div>
       <h2 className='text-2xl font-bold'>Developer Tools</h2>
-      <div className='flex flex-wrap justify-evenly w-5/6 mx-auto h-fit p-3'>
+      <div className='flex flex-wrap justify-evenly w-5/6 mx-auto h-fit p-1'>
         {toolsconArrays.map(tool => (
           <CircularProgress percentage={tool.percentage} icon={tool.icon} iconName={tool.iconName} ></CircularProgress>
         ))}

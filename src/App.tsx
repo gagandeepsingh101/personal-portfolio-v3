@@ -4,7 +4,7 @@ import Header from "./components/Header"
 function App() {
 
   return (
-    <div className="h-screen w-screen bg-darkBlack p-10 text-white flex justify-evenly items-center">
+    <div className="h-screen w-screen bg-darkBlack p-5 text-white flex justify-evenly items-center">
       <SideProfile />
       <div className="h-full w-9/12 bg-lightBlack border border-[#ffffff24] rounded-xl">
         <Header />
