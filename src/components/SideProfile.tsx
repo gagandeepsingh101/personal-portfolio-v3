@@ -23,9 +23,9 @@ const InfoSectionArray: Array<{ iconName: string, iconText: string, iconImage: R
 const SideProfile: React.FC = () => {
     return (
         <div className='w-[20%] h-full flex flex-col justify-evenly items-center p-5 bg-lightBlack border border-[#ffffff24] rounded-xl'>
-            <img srcSet={profileImg} alt="profile Image" className='bg-lightGray p-6 rounded-3xl w-4/6 h-fit' />
-            <p className='font-bold text-lg'>Gagandeep Singh</p>
-            <p className='text-sm p-4 bg-[#2b2b2c] rounded-xl'>Frontend Developer</p>
+            <img srcSet={profileImg} alt="profile Image" className='bg-lightGray p-5 rounded-3xl w-[50%]' />
+            <p className='font-bold text-2xl'>Gagandeep Singh</p>
+            <p className='text-md font-semibold p-4 bg-[#2b2b2c] rounded-xl'>Frontend Developer</p>
             <hr className='border-[#ffffff30] w-full' />
             {InfoSectionArray.map(info => (<InfoSection iconName={info.iconName} iconText={info.iconText} iconImage={info.iconImage}></InfoSection>))}
 
