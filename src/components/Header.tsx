@@ -14,7 +14,7 @@ const Header: React.FC = () => {
         </p>
         <div className='h-[6px] w-1/6 bg-gradient-to-r from-lightYellow to-lightOrange rounded-full'></div>
       </div>
-      <div className=' bg-darkGrayShade2 w-6/12 text-lg float-right h-3/4 rounded-tr-xl rounded-bl-3xl flex justify-evenly items-center'>
+      <div className=' absolute left-0 bottom-0 w-full  bg-darkGrayShade2  text-lg float-right  rounded-tr-xl rounded-bl-3xl flex justify-evenly items-center lg:w-6/12 lg:h-3/4'>
         <Link to={"/"} className={'hover:text-[#ffffff4e] ' + (pathname === '/' && "text-lightOrange font-bold hover:text-lightOrange")} >About</Link>
         <Link to={"/skill"} className={'hover:text-[#ffffff4e] ' + (pathname === '/skill' && "text-lightOrange font-bold hover:text-lightOrange")}>Skill</Link>
         <Link to={"/portfolio"} className={'hover:text-[#ffffff4e] ' + (pathname === '/portfolio' && "text-lightOrange font-bold hover:text-lightOrange")}>Portfolio</Link>
