@@ -9,7 +9,7 @@ import { SiMongodb, SiNetlify, SiRender, SiTailwindcss } from "react-icons/si";
 import { TbBrandNextjs, TbBrandRedux, TbBrandTypescript, TbBrandVscode } from "react-icons/tb";
 import CircularProgress from '../components/CircularProgressBar';
 
-const skillIconStyle: string = "text-lightOrange w-12 h-12 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-3/4";
+const skillIconStyle: string = " w-6 h-6 text-lightOrange  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[100%] md:w-8 md:h-8  lg:-translate-y-3/4 lg:w-12 lg:h-12";
 const skillIconArrays: Array<{ percentage: number, icon: ReactElement, iconName: string }> = [
   { percentage: 95, icon: <FaHtml5 className={skillIconStyle} />, iconName: "HTML 5" },
   { percentage: 95, icon: <FaCss3 className={skillIconStyle} />, iconName: "CSS 3" },
@@ -35,14 +35,14 @@ const Skill: React.FC = () => {
     <div className='w-full h-[86%] flex flex-col px-6 py-3' >
       <h2 className='text-2xl font-bold'>Frameworks and library</h2>
       <div className='flex justify-evenly flex-wrap p-1 mx-auto w-5/6 h-fit '>
-        {skillIconArrays.map(skill => (
-          <CircularProgress percentage={skill.percentage} icon={skill.icon} iconName={skill.iconName} ></CircularProgress>
+        {skillIconArrays.map((skill,index) => (
+          <CircularProgress key={index} percentage={skill.percentage} icon={skill.icon} iconName={skill.iconName} ></CircularProgress>
         ))}
       </div>
       <h2 className='text-2xl font-bold'>Developer Tools</h2>
       <div className='flex flex-wrap justify-evenly w-5/6 mx-auto h-fit p-1'>
-        {toolsconArrays.map(tool => (
-          <CircularProgress percentage={tool.percentage} icon={tool.icon} iconName={tool.iconName} ></CircularProgress>
+        {toolsconArrays.map((tool,index) => (
+          <CircularProgress key={index} percentage={tool.percentage} icon={tool.icon} iconName={tool.iconName} ></CircularProgress>
         ))}
       </div>
     </div>

@@ -18,8 +18,8 @@ const projectItemArray: Array<{ projectImg: string, projectName: string, gitHubL
 const Portfolio: React.FC = () => {
   return (
     <div className='w-full h-[86%] flex justify-evenly items-center flex-wrap py-2'>
-      {projectItemArray.map((item) => (
-        <ProjectItem projectImg={item.projectImg} projectName={item.projectName} gitHubLink={item.gitHubLink} liveLink={item.liveLink} />
+      {projectItemArray.map((item,index) => (
+        <ProjectItem key={index} projectImg={item.projectImg} projectName={item.projectName} gitHubLink={item.gitHubLink} liveLink={item.liveLink} />
       ))}
     </div>
   )

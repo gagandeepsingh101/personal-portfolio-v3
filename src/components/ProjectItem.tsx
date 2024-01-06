@@ -5,8 +5,8 @@ import { PiGithubLogoFill } from "react-icons/pi";
 
 const ProjectItem: React.FC<{ projectImg: string; projectName: string, gitHubLink: string, liveLink: string }> = ({ projectImg, projectName, gitHubLink, liveLink }) => {
     return (
-        <div className='w-[30%] h-[40%] relative'>
-            <div className='w-full h-4/5 rounded-3xl bg-[#0000006c] relative overflow-hidden group '>
+        <div className=' w-5/6 my-3 overflow-hidden relative md:w-[45%] md:my-6 md:h-[100%] lg:w-[30%] lg:h-[40%]'>
+            <div className='w-full h-4/5  bg-[#0000006c] relative overflow-hidden group rounded-lg md:rounded-xl lg:rounded-3xl '>
                 <img
                     src={projectImg}
                     alt={projectName}
