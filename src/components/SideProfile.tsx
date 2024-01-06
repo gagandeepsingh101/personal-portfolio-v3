@@ -67,8 +67,8 @@ const SideProfile: React.FC = () => {
                     {/* Social media icons */}
                     <hr className={'  border-[#ffffff30] w-full lg:hidden transition-all duration-300 ease-linear ' + (showMoreInfo ? "opacity-100" : "opacity-0")} />
                     <div className={'w-10/12 h-20  flex gap-4  items-center md:w-11/12 lg:justify-center lg:h-fit lg:w-fit transition-all duration-300 ease-linear ' + (showMoreInfo ? "opacity-100" : "opacity-0")}>
-                        <FaGithub className="w-5 h-5 cursor-pointer text-lightYellow hover:text-lightOrange" />
-                        <IoLogoLinkedin className="w-5 h-5 cursor-pointer text-lightYellow hover:text-lightOrange" />
+                        <FaGithub onClick={() => window.open("https://github.com/gagandeepsingh101", "_target_blank")} className="w-5 h-5 cursor-pointer text-lightYellow hover:text-lightOrange" />
+                        <IoLogoLinkedin onClick={() => window.open("https://www.linkedin.com/in/gagandeepsingh101", "_target_blank")} className="w-5 h-5 cursor-pointer text-lightYellow hover:text-lightOrange" />
                     </div>
                 </>
             )}

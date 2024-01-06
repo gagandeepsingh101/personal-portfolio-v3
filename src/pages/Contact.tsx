@@ -1,6 +1,7 @@
 import { send } from '@emailjs/browser';
 import React from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
+import toast from 'react-hot-toast';
 import { IoIosSend } from 'react-icons/io';
 
 // Define the input fields and their types
@@ -22,11 +23,14 @@ const Contact: React.FC = () => {
 
   // Form submission function
   const onSubmit: SubmitHandler<InputField> = (data) => {
-    console.log(data);
-    
-    // Sending email using the emailjs library
-    send(serviceid, templateid, { form_name: data.firstName + " " + data.lastName, form_email: data.email, message: data.message }, publickey)
-      .then(() => { console.log("success") });
+
+    // Sending email using the emailjs library with toast
+    toast.promise(
+      send(serviceid, templateid, { form_name: data.firstName + " " + data.lastName, form_email: data.email, message: data.message }, publickey), {
+      loading: 'Sending Message',
+      success: 'Message Sent Successfully',
+      error: 'Error in sending message',
+    })
 
     // Resetting the form after successful submission
     reset();
@@ -48,7 +52,7 @@ const Contact: React.FC = () => {
       >
         {/* First Name Input */}
         <input
-          {...register('firstName', { required: true, maxLength: 20, minLength: 5 })}
+          {...register('firstName', { required: true, maxLength: 20, minLength: 3 })}
           className={'bg-transparent focus:outline-none text-sm p-2 mx-auto my-3 border rounded-xl w-11/12 md:h-16 md:px-5 md:py-2 md:text-lg lg:w-5/12 lg:h-1/6 ' + (errors.firstName ? "border-red-500" : "border-[#b59947]")}
           type='text'
           name='firstName'
@@ -57,7 +61,7 @@ const Contact: React.FC = () => {
         />
         {/* Last Name Input */}
         <input
-          {...register('lastName', { required: true, maxLength: 20, minLength: 5 })}
+          {...register('lastName', { required: true, maxLength: 20, minLength: 3 })}
           className={'bg-transparent focus:outline-none  mx-auto my-3 p-2 text-sm  border rounded-xl w-11/12 md:h-16 md:px-5 md:py-2 md:text-lg lg:w-5/12  lg:h-1/6 ' + (errors.lastName ? "border-red-500" : "border-[#b59947]")}
           type='text'
           name='lastName'
