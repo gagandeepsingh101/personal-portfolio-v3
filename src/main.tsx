@@ -6,7 +6,7 @@ import './index.css'
 import Portfolio from './pages/Portfolio'
 import About from './pages/About'
 import Contact from './pages/Contact'
-import Skill from './pages/Skill.tsx'
+import Resume from './pages/Resume.tsx'
 
 const router = createBrowserRouter([
   {
@@ -18,8 +18,8 @@ const router = createBrowserRouter([
         element: <About />
       },
       {
-        path: "/skill",
-        element: <Skill/>
+        path: "/resume",
+        element: <Resume/>
       },
       {
         path: "/portfolio",

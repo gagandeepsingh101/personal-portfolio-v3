@@ -23,7 +23,8 @@ export default {
 				lightGray: "#353535",
 			},
 			boxShadow:{
-				iconShadow: "#febd5d40 -1px -1px 2px"
+				iconShadow: "#febd5d40 -1px -1px 2px",
+				innerShadow: "inset 4px 4px 40px #febd5d40"
 			}
 		},
 	},
