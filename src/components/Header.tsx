@@ -21,9 +21,8 @@ const Header: React.FC = () => {
         {/* Horizontal line below the page title for decoration */}
         <div className='h-[6px] w-2/12 bg-gradient-to-r from-lightYellow to-lightOrange rounded-full md:w-1/12 lg:w-1/6'></div>
       </div>
-
       {/* Right section of the header containing navigation links */}
-      <div className='z-50 rounded-tr-full rounded-tl-full fixed bg-[#00000088] border border-[#ffffff24] backdrop-blur-md py-3 left-0 bottom-0 w-full text-sm float-right rounded-bl-3xl flex justify-evenly items-center md:text-lg lg:bg-darkGrayShade2 lg:relative lg:w-6/12 lg:h-3/4 lg:rounded-tr-xl lg:rounded-tl-none lg:rounded-br-none'>
+      <div className='z-50 rounded-tr-full rounded-tl-full fixed bg-[#00000088] border border-[#403d3d24] backdrop-blur-md py-3 left-0 bottom-0 w-full text-sm float-right rounded-bl-3xl flex justify-evenly items-center md:text-lg lg:bg-darkGrayShade2 lg:relative lg:w-6/12 lg:h-3/4 lg:rounded-tr-xl lg:rounded-tl-none lg:rounded-br-none'>
         {/* Navigation links using React Router's Link component */}
         <Link to={"/"} className={'hover:text-[#ffffff4e] ' + (pathname === '/' && "text-lightOrange font-bold hover:text-lightOrange")}>About</Link>
         <Link to={"/resume"} className={'hover:text-[#ffffff4e] ' + (pathname === '/resume' && "text-lightOrange font-bold hover:text-lightOrange")}>Resume</Link>
