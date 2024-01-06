@@ -14,9 +14,6 @@ const Resume: React.FC = () => {
           <GoBook className="w-8 h-8 rounded-xl shadow-iconShadow text-lightYellow bg-lightGray p-2 md:w-12 md:h-12"></GoBook>
           <span className='text-lg font-semibold md:text-2xl lg:text-3xl'>Education</span>
         </h2 >
-        {/* Divider line */}
-        <hr className={'h-1/2 border border-[#ffffff30] rotate-180 translate-x-6 translate-y-8 md:translate-y-12 absolute md:h-[54%]'} />
-
         {/* Individual education details */}
         <div className='w-[76.2%] h-fit relative flex flex-col gap-1 ml-auto md:w-[89.6%] lg:w-[93.5%]'>
           {/* Education Info Section 1 */}
