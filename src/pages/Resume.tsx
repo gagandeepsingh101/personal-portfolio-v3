@@ -1,6 +1,5 @@
 import ProgressBar from '@ramonak/react-progress-bar';
 import React from 'react';
-import 'react-circular-progressbar/dist/styles.css';
 import { GoBook } from "react-icons/go";
 
 // Resume component
@@ -17,10 +16,10 @@ const Resume: React.FC = () => {
         </h2 >
         {/* Divider line */}
         <hr className={'h-1/2 border border-[#ffffff30] rotate-180 translate-x-6 translate-y-8 md:translate-y-12 absolute md:h-[54%]'} />
-        
+
         {/* Individual education details */}
         <div className='w-[73%] h-fit relative flex flex-col gap-1 ml-auto md:w-[89.6%] lg:w-[93.5%]'>
-          {/* Progress bar indicator */}
+          {/* Education Info Section 1 */}
           <div className='w-6 h-6 bg-darkGrayShade1 rounded-full p-2 absolute top-0 -translate-x-[50px]'>
             <div className='w-full h-full bg-lightYellow rounded-full'></div>
           </div>
@@ -28,11 +27,15 @@ const Resume: React.FC = () => {
           <p className='text-sm text-lightOrange font-thin md:text-base'>2020-2023</p>
           <p className='text-sm md:text-base'>Graduated in BCA with an aggregate of 74%</p>
         </div>
-
-        {/* Another education entry */}
-        {/* (Repeat similar structure for each education entry) */}
-        {/* ... */}
-
+        <div className='w-[73%] h-fit relative flex flex-col gap-1 ml-auto md:w-[89.6%] lg:w-[93.5%]'>
+          {/* Education Info Section 2 */}
+          <div className='w-6 h-6 bg-darkGrayShade1 rounded-full p-2 absolute top-0 -translate-x-[50px]'>
+            <div className='w-full h-full bg-lightYellow rounded-full'></div>
+          </div>
+          <h2 className='text-sm md:text-lg font-semibold'>Guru HariKrishan Sr Sec Public School</h2>
+          <p className='text-sm text-lightOrange font-thin md:text-base'>2018-2020</p>
+          <p className='text-sm md:text-base'>Passout 12th with an aggregate of 79%</p>
+        </div>
       </div>
 
       {/* Skills section */}
@@ -42,19 +45,19 @@ const Resume: React.FC = () => {
         {/* HTML and CSS skill */}
         <div className='w-11/12 mx-auto flex flex-col gap-3 '>
           <h2 className='text-sm font-bold md:text-lg lg:text-xl'>HTML and CSS  </h2>
-          <ProgressBar bgColor='#febd5d70' labelColor='transparent' baseBgColor='#121212' height='10px' completed={95}/>
+          <ProgressBar bgColor='#febd5d70' labelColor='transparent' baseBgColor='#121212' height='10px' completed={95} />
         </div>
 
         {/* Javascript skill */}
         <div className='w-11/12 mx-auto flex flex-col gap-3 '>
           <h2 className='text-sm font-bold md:text-lg lg:text-xl'>Javascript </h2>
-          <ProgressBar bgColor='#febd5d70' labelColor='transparent' baseBgColor='#121212' height='10px' completed={90}/>
+          <ProgressBar bgColor='#febd5d70' labelColor='transparent' baseBgColor='#121212' height='10px' completed={90} />
         </div>
 
         {/* ReactJs skill */}
         <div className='w-11/12 mx-auto flex flex-col gap-3 '>
           <h2 className='text-sm font-bold md:text-lg lg:text-xl'>ReactJs </h2>
-          <ProgressBar bgColor='#febd5d70' labelColor='transparent' baseBgColor='#121212' height='10px' completed={80}/>
+          <ProgressBar bgColor='#febd5d70' labelColor='transparent' baseBgColor='#121212' height='10px' completed={80} />
         </div>
       </div>
     </div>
