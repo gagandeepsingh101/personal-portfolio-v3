@@ -1,30 +1,110 @@
-# React + TypeScript + Vite
+<p align="center">
+  <img src="https://github.com/gagandeepsingh101/personal-portfolio-v3/assets/145465280/78514208-190c-488d-82ed-2d9d9e02c4b5" width="100" />
+</p>
+<p align="center">
+    <h1 align="center">PERSONAL-PORTFOLIO-V3</h1>
+</p>
+<p align="center">
+	<!-- Shields.io badges not used with skill icons. --><p>
+<p align="center">
+		<em>Developed with the software and tools below.</em>
+</p>
+<p align="center">
+	<a href="https://skillicons.dev">
+		<img src="https://skillicons.dev/icons?i=css,html,js,md,react,ts,vite">
+	</a></p>
+<hr>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🔗 Quick Links
 
-Currently, two official plugins are available:
+- [📍 Overview](#-overview)
+- [📦 Features](#-features)
+- [📂 Repository Structure](#-repository-structure)
+- [🚀 Getting Started](#-getting-started)
+  - [⚙️ Installation](#-installation)
+  - [🤖 Running personal-portfolio-v3](#-running-personal-portfolio-v3)
+  - [🌐 Deployment Link](#-Deployment-link)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📍 Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<code>► Simple portfolio created with react and typescript in vite </code>
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## 📦 Features
+
+<code>► It is well responsive and created with latest technology</code>
+
+---
+
+## 📂 Repository Structure
+
+```sh
+└── personal-portfolio-v3/
+    ├── .eslintrc.cjs
+    ├── index.html
+    ├── package-lock.json
+    ├── package.json
+    ├── postcss.config.js
+    ├── src
+    │   ├── App.tsx
+    │   ├── components
+    │   │   ├── Header.tsx
+    │   │   ├── ProjectItem.tsx
+    │   │   └── SideProfile.tsx
+    │   ├── index.css
+    │   ├── main.tsx
+    │   ├── pages
+    │   │   ├── About.tsx
+    │   │   ├── Contact.tsx
+    │   │   ├── Portfolio.tsx
+    │   │   └── Resume.tsx
+    │   └── vite-env.d.ts
+    ├── tailwind.config.js
+    ├── tsconfig.json
+    ├── tsconfig.node.json
+    └── vite.config.ts
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+---
+
+## 🚀 Getting Started
+
+***Requirements***
+
+Ensure you have the following dependencies installed on your system:
+
+* **TypeScript**: `version 5.3.3`
+
+### ⚙️ Installation
+
+1. Clone the personal-portfolio-v3 repository:
+
+```sh
+git clone https://github.com/gagandeepsingh101/personal-portfolio-v3
+```
+
+2. Change to the project directory:
+
+```sh
+cd personal-portfolio-v3
+```
+
+3. Install the dependencies:
+
+```sh
+npm install
+```
+
+### 🤖 Running personal-portfolio-v3
+
+Use the following command to run personal-portfolio-v3:
+
+```sh
+npm run build && node dist/main.js
+```
+
+### 🌐 Deployment-Link
+- You cam see from [here](https://personal-portfolio-v3-oj4q.onrender.com)
