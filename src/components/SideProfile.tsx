@@ -1,4 +1,4 @@
-import React, { ReactElement, useState } from 'react';
+import React, { ReactElement, useEffect, useState } from 'react';
 import { FaGithub } from "react-icons/fa6";
 import { IoLogoLinkedin, IoPhonePortraitOutline } from "react-icons/io5";
 import { MdOutlineEmail, MdOutlineLocationOn } from "react-icons/md";
@@ -32,16 +32,17 @@ const InfoSectionArray: Array<{ iconName: string, iconText: string, iconImage: R
 // Main SideProfile component
 const SideProfile: React.FC = () => {
     // State for toggling additional information display
-    const [showMoreInfo, setShowMoreInfo] = useState(() => {
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            return false;
-        } else {
-            return true;
-        }
-    });
+    const [showMoreInfo, setShowMoreInfo] = useState<boolean>();
 
+    useEffect(() => {
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            setShowMoreInfo(false);
+        } else {
+            setShowMoreInfo(true);
+        }
+    }, [setShowMoreInfo,showMoreInfo]);
     return (
-        <div className={'w-11/12 my-4 relative flex flex-col justify-evenly items-center px-2 py-5 md:p-5 bg-lightBlack border border-[#ffffff24] rounded-xl lg:w-[20%] transition-all duration-300 ease-linear overflow-hidden lg:h-full ' + (showMoreInfo ? "h-[75vh] md:h-[65vh]" : " h-[25vh] md:h-[30vh]")}>
+        <div className={'w-11/12 relative flex flex-col justify-evenly items-center px-2 py-5 md:px-7 bg-lightBlack border border-[#ffffff24] rounded-xl lg:w-[20%] transition-all duration-300 ease-linear overflow-hidden lg:h-full ' + (showMoreInfo ? "h-[75vh] md:h-[65vh]" : " h-[25vh] md:h-[30vh]")}>
             {/* Button to toggle more information */}
             <button className='text-sm border border-[#ffffff24] px-3 py-2 rounded-tr-xl rounded-bl-3xl shadow-innerShadow md:text-xl absolute top-0 right-0 lg:hidden' onClick={() => setShowMoreInfo(!showMoreInfo)}>More Info</button>
 
@@ -50,7 +51,7 @@ const SideProfile: React.FC = () => {
                 <img srcSet={profileImg} alt="profile Image" className='bg-lightGray w-[30%] p-1 rounded-lg  md:rounded-3xl md:p-5 md:w-[18%]  lg:w-[50%]' />
                 <div className='w-[80%] h-full justify-center items-center  flex flex-col gap-4 md:w-fit lg:w-full lg:justify-evenly lg:items-center'>
                     <p className=' text-md font-bold md:text-2xl'>Gagandeep Singh</p>
-                    <p className='text-sm font-semibold p-2 md:text-md md:p-4 bg-[#2b2b2c] rounded-xl w-fit'>Frontend Developer</p>
+                    <p className='text-sm font-semibold p-2 md:text-md md:p-4 bg-[#2b2b2c] rounded-xl w-fit'>Web Developer</p>
                 </div>
             </div>
 

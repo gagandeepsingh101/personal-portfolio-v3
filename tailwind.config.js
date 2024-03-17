@@ -1,3 +1,5 @@
+import scrollbar from "tailwind-scrollbar";
+
 /** @type {import('tailwindcss').Config} */
 export default {
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -11,7 +13,6 @@ export default {
 				lightOrange: "#febd5d",
 				lightGray: "#353535",
 				darkGrayShade2: "#282829",
-				
 			},
 			colors: {
 				darkBlack: "#121212",
@@ -22,11 +23,11 @@ export default {
 				lightOrange: "#febd5d",
 				lightGray: "#353535",
 			},
-			boxShadow:{
+			boxShadow: {
 				iconShadow: "#febd5d40 -1px -1px 2px",
-				innerShadow: "inset 4px 4px 40px #febd5d40"
-			}
+				innerShadow: "inset 4px 4px 40px #febd5d40",
+			},
 		},
 	},
-	plugins: [],
+	plugins: [scrollbar],
 };

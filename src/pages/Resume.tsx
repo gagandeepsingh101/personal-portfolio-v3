@@ -6,7 +6,7 @@ import { GoBook } from "react-icons/go";
 const Resume: React.FC = () => {
   return (
     // Main container for the Resume section
-    <div className='w-full flex flex-col md:py-7 lg:px-6 lg:py-3 lg:h-[86%]' >
+    <div className='w-full overflow-hidden overflow-y-scroll flex flex-col md:py-7 lg:px-6 lg:py-3 lg:h-[86%] scrollbar-thin scrollbar-track-transparent scrollbar-thumb-lightOrange' >
       {/* Education section */}
       <div className='w-11/12 mx-auto h-fit relative flex flex-col py-3 gap-4 md:gap-6'>
         {/* Education title with icon */}
@@ -41,20 +41,20 @@ const Resume: React.FC = () => {
       <div className='w-[95%] mx-auto h-fit py-4 flex flex-col gap-5 bg-darkGrayShade2 my-2 rounded-xl'>
         {/* HTML and CSS skill */}
         <div className='w-11/12 mx-auto flex flex-col gap-3 '>
-          <h2 className='text-sm font-bold md:text-lg lg:text-xl'>HTML and CSS  </h2>
-          <ProgressBar bgColor='#febd5d70' labelColor='white' labelSize='15px' baseBgColor='#121212' height='15px' completed={95} />
+          <h2 className='text-sm font-bold md:text-lg lg:text-xl'>Frontend Development </h2>
+          <ProgressBar bgColor='#febd5d70' labelColor='white' labelSize='15px' baseBgColor='#121212' height='18px' completed={95} />
         </div>
 
         {/* Javascript skill */}
         <div className='w-11/12 mx-auto flex flex-col gap-3 '>
-          <h2 className='text-sm font-bold md:text-lg lg:text-xl'>Javascript </h2>
-          <ProgressBar bgColor='#febd5d70' labelColor='white' baseBgColor='#121212' labelSize='15px' height='15px' completed={90} />
+          <h2 className='text-sm font-bold md:text-lg lg:text-xl'>Backend Development </h2>
+          <ProgressBar bgColor='#febd5d70' labelColor='white' baseBgColor='#121212' labelSize='15px' height='18px' completed={80} />
         </div>
 
         {/* ReactJs skill */}
         <div className='w-11/12 mx-auto flex flex-col gap-3 '>
-          <h2 className='text-sm font-bold md:text-lg lg:text-xl'>ReactJs </h2>
-          <ProgressBar bgColor='#febd5d70' labelColor='white' baseBgColor='#121212' labelSize='15px' height='15px' completed={80} />
+          <h2 className='text-sm font-bold md:text-lg lg:text-xl'>Programming </h2>
+          <ProgressBar bgColor='#febd5d70' labelColor='white' baseBgColor='#121212' labelSize='15px' height='18px' completed={85} />
         </div>
       </div>
     </div>
