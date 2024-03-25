@@ -5,7 +5,7 @@ import { PiGithubLogoFill } from "react-icons/pi";
 // ProjectItem component with props for project details
 const ProjectItem: React.FC<{ projectImg: string; projectName: string, gitHubLink: string, liveLink: string }> = ({ projectImg, projectName, gitHubLink, liveLink }) => {
     return (
-        <div className='w-5/6 my-3 overflow-hidden relative md:w-[45%] md:my-6 md:h-[100%] lg:w-[30%] lg:h-[40%]'>
+        <div className='w-5/6 my-3 py-1 overflow-hidden relative md:w-[45%] md:my-6 md:h-[100%] lg:w-[30%] lg:h-[40%]'>
             {/* Container for the project image and interaction overlay */}
             <div className='w-full h-4/5 bg-[#0000006c] relative overflow-hidden group rounded-md md:rounded-lg lg:rounded-xl '>
                 {/* Project image */}

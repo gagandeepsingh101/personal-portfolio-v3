@@ -88,7 +88,7 @@ const Contact: React.FC = () => {
         {/* Submit Button */}
         <button
           type='submit'
-          className='ml-auto  w-fit p-2  flex gap-2 justify-center items-center  font-bold h-[50px] text-[#ae9753] rounded-xl shadow-iconShadow mr-4 md:text-xl md:mr-6 md:px-5 lg:mr-20'
+          className='ml-auto  w-fit p-2  flex gap-2 justify-center items-center  font-bold h-[50px] text-[#ae9753] rounded-xl shadow-iconShadow hover:shadow-innerShadow mr-4 md:text-xl md:mr-6 md:px-5 lg:mr-20'
         >
           <IoIosSend />
           <span>Send Message</span>

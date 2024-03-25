@@ -32,20 +32,17 @@ const InfoSectionArray: Array<{ iconName: string, iconText: string, iconImage: R
 // Main SideProfile component
 const SideProfile: React.FC = () => {
     // State for toggling additional information display
-    const [showMoreInfo, setShowMoreInfo] = useState<boolean>();
+    const [showMoreInfo, setShowMoreInfo] = useState<boolean>(false);
 
     useEffect(() => {
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            setShowMoreInfo(false);
-        } else {
+        if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
             setShowMoreInfo(true);
         }
-    }, [setShowMoreInfo,showMoreInfo]);
+    }, []);
     return (
         <div className={'w-11/12 relative flex flex-col justify-evenly items-center px-2 py-5 md:px-7 bg-lightBlack border border-[#ffffff24] rounded-xl lg:w-[20%] transition-all duration-300 ease-linear overflow-hidden lg:h-full ' + (showMoreInfo ? "h-[75vh] md:h-[65vh]" : " h-[25vh] md:h-[30vh]")}>
             {/* Button to toggle more information */}
             <button className='text-sm border border-[#ffffff24] px-3 py-2 rounded-tr-xl rounded-bl-3xl shadow-innerShadow md:text-xl absolute top-0 right-0 lg:hidden' onClick={() => setShowMoreInfo(!showMoreInfo)}>More Info</button>
-
             {/* Profile information */}
             <div className='w-full my-5  flex justify-evenly items-center md:justify-start md:gap-10 lg:flex-col lg:gap-3'>
                 <img srcSet={profileImg} alt="profile Image" className='bg-lightGray w-[30%] p-1 rounded-lg  md:rounded-3xl md:p-5 md:w-[18%]  lg:w-[50%]' />
