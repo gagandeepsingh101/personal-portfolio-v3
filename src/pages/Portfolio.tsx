@@ -15,7 +15,7 @@ import ProjectItem from '../components/ProjectItem';
 // Array containing project details
 const projectItemArray: Array<{ projectImg: string, projectName: string, gitHubLink: string, liveLink: string }> = [
   { projectImg: project1, projectName: "Entertainment MERN App", gitHubLink: "https://github.com/gagandeepsingh101/entertainment-app", liveLink: "https://entertainment-app-frontend-110.onrender.com/" },
-  { projectImg: project2, projectName: "Blog MERN App", gitHubLink: "https://github.com/gagandeepsingh101/Blog-App", liveLink: "https://frontend-blog-app-110.onrender.com/" },
+  { projectImg: project2, projectName: "Dev Blog App", gitHubLink: "https://github.com/gagandeepsingh101/Dev-Blog-App", liveLink: "https://dev-blog-110.onrender.com/" },
   { projectImg: project3, projectName: "Basic User Auth App", gitHubLink: "https://github.com/gagandeepsingh101/User-Auth-System", liveLink: "https://user-auth-frontend-110.onrender.com/" },
   { projectImg: project4, projectName: "Basic CRUD Todo App", gitHubLink: "https://github.com/gagandeepsingh101/CRUD-TODO-App", liveLink: "https://crud-todo-frontend-110.onrender.com" },
   { projectImg: project5, projectName: "Get Youtube Subscriber Api", gitHubLink: "https://github.com/gagandeepsingh101/get-youtube-subscriber-backend-project", liveLink: "https://get-youtube-subscriber-110.onrender.com/" },
