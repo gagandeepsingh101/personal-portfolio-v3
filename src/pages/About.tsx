@@ -44,7 +44,7 @@ const About: React.FC = () => {
         </div>
       </div>
 
-      <button onClick={() => window.open("https://drive.google.com/file/d/1UwICjElQd1zrQ6fC8wb24n8AfChBCOGo/view?usp=sharing", "_target_blank")}
+      <button onClick={() => window.open("https://drive.google.com/file/d/1MALRLXBiSQRLeO4PtmXjPcEjoyDoQgu_/view?usp=sharing", "_target_blank")}
         className='w-fit bg-gradient-to-br from-lightYellow to-lightOrange rounded-xl text-black font-bold p-3 hover:inline-block hover:bg-clip-text hover:text-transparent hover:shadow-iconShadow transition-all duration-300 ease-in'>
         Download CV
       </button>
